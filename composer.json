@@ -1,0 +1,11 @@
+{
+    "name": "mon-projet/app",
+    "description": "Un projet PHP avec namespace App",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -30,7 +30,7 @@ function charger(string $fichier): array
 
   $result = json_decode($contenu, true);
   return $result;
-  
+
   if(!array($result)){
     return $solution;
   }
