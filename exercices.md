@@ -1,4 +1,7 @@
-# 📝 Niveau 2 — Exercices
+
+
+
+    # 📝 Niveau 2 — Exercices
 
 Un fichier `.php` par exercice, avec `declare(strict_types=1);`. Chaque exercice indique son
 **🎯 But**. Cherche 🔎 avant les [corrigés](./corriges.md).
