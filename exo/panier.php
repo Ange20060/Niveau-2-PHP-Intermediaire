@@ -21,7 +21,7 @@ function ajouterAuPanier(array $panier, string $produit, float $prix, int $qte):
     return $panier;
 }
 
-function ​totalPanier(array $panier): float
+function totalPanier(array $panier): float
 {
     $total = 0.0;
 
@@ -42,3 +42,12 @@ function ​totalPanier(array $panier): float
 
     return $total;
 }
+$pani=['a'=>['prix'=>100, 'qte'=>20],];
+
+$panier = ajouterAuPanier($pani, 'Z', 500, 222);
+
+var_dump($panier);
+
+
+$tota=totalPanier($panier);
+echo $tota;

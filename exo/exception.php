@@ -13,8 +13,5 @@ function retirer(float $solde, float $montant): float
   return $solde - $montant;
 }
 
-try {
-    retirer(100.0, 150.0);
-} catch (SoldeInsuffisantException $e) {
-    echo $e->getMessage();
-}
+$retrait= retirer(20000, 5000);
+echo $retrait;

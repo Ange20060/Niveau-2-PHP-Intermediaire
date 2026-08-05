@@ -35,3 +35,9 @@ function charger(string $fichier): array
     return $solution;
   }
 }
+$donn= ["A", 12,];
+$fichier="merdealor";
+
+$sauve=sauvegarder($donn, $fichier);
+
+echo $sauve;

@@ -5,7 +5,7 @@ declare(strict_types=1);
 function calculerAge(string $dateNaissance): int
 {
 	try {
-		$birth = new DateTimeImmutable($dateNaissance);
+		$birth = DateTimeImmutable::createFromFormat('d/m/Y', $dateNaissance);
 		$now = new DateTimeImmutable();
 		$diff = $now->diff($birth);
 		return (int)$diff->y;
@@ -23,3 +23,14 @@ function joursAvant(string $dateFuture): int
   return (int)$resultat->days;
 
 }
+
+$dateNaissance = "20/06/2006";
+
+$age=calculerAge($dateNaissance);
+
+echo $age;
+
+$dateFuture= "02/06/2027";
+
+$future = joursAvant($dateFuture);
+echo $future;

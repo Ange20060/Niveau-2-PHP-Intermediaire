@@ -9,3 +9,9 @@ function genererSlug(string $titre): string{
     $slug = trim($slug, '-');
     return $slug;
 }
+
+$titre= "PAPA MANGE DU PAIN";
+
+$trans= genererSlug($titre);
+
+echo $trans;
